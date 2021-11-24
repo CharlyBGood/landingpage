@@ -12,14 +12,14 @@ body, ::after, ::before {
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    top: 0;
     width: 100%;
     height: 100vh;
     background-color: #1F2937;
     color: #f9faf8;
     font-size: 1rem;
+    top: 0;
 }
 
 .hero h1 {
@@ -34,23 +34,22 @@ a {
 .nav_container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
     width: 80%;
+    top: 0;
+    padding: 1em;
 }
 
 .left_nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    flex-grow: 0%;
+    /* padding: 1em; */
 }
 
 .right_nav {
     display: flex;
     justify-content: flex-end;
     flex: 1;
+    
 }
 
 .right_nav nav a {
@@ -61,13 +60,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5em auto;
+    margin: 2em auto;
     width: 80%;
+    flex: 1;
 }
 
-.left_content {
+/* .left_content {
     padding: .5em;
-}
+} */
 
 .left_content h1 {
     font-size: 3em;
@@ -76,7 +76,13 @@ a {
 }
 
 .right_content {
-    margin: 0 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.img_charly {
+    width: 100%;
+    border-radius: .5em;
 }
 
 .signup_button {
@@ -88,32 +94,22 @@ a {
     cursor: pointer;
 }
 
-.img_charly {
-    width: 21em;
-    padding: 0 1em;
-    border-radius: 3em 7em;
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
 }
 
-section {
-    width: 100%;
+.section_container {
+    width: 80%;
+    margin: 0 auto 1em;
 }
 
 .section_container h2 {
     text-align: center;
     margin-top: 1.3em;
     margin-bottom: 0;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
-.section_container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .boxes {
