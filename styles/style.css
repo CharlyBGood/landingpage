@@ -5,6 +5,8 @@
 body, ::after, ::before {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 .hero {
@@ -13,10 +15,15 @@ body, ::after, ::before {
     justify-content: space-between;
     align-items: center;
     top: 0;
+    width: 100%;
     height: 100vh;
     background-color: #1F2937;
     color: #f9faf8;
-    font-size: 18px;
+    font-size: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
 }
 
 a {
@@ -73,10 +80,11 @@ a {
 }
 
 .signup_button {
-    padding: .3em .9em;
+    padding: .3em 1.3em;
     outline: none;
     border-radius: .5em;
     background-color: #3882f6;
+    color: #f9faf8;
     cursor: pointer;
 }
 
@@ -94,6 +102,13 @@ section {
     text-align: center;
     margin-top: 1.3em;
     margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
 }
 
 .section_container {
@@ -116,6 +131,13 @@ section {
     height: 6em;
     border: 1px solid #3882f6;
     border-radius: 1em;
+}
+
+.description_boxes {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .article {
@@ -160,14 +182,15 @@ section {
 .action_two button {
     background-color: #3882f6;
     border-radius: .5em;
-    outline: none;
+    /* border: 1px solid #bebcbc; */
     color: #e5e7eb;
     padding: .3em 1em;
+    cursor: pointer;
 }
 
 .footer {
     text-align: center;
-    padding: .3em;
+    padding: 0;
     background-color: #1F2937;
     color: #e5e7eb;
 }
