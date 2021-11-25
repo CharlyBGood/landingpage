@@ -30,12 +30,12 @@ body, ::after, ::before {
     padding-top: 1em;
 }
 
-a {
+.nav_container a, .footer a {
     color: #f9faf8;
     text-decoration: none;
 }
 
-a:hover {
+.nav_container a:hover, .footer a:hover {
     color: #3882f6;
 }
 
@@ -66,7 +66,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 80%;
+    width: 60%;
     padding: .5em;
 }
 
