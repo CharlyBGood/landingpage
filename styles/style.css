@@ -22,17 +22,21 @@ body, ::after, ::before {
     top: 0;
 }
 
-a {
-    color: #f9faf8;
-    text-decoration: none;
-}
-
 .nav_container {
     display: flex;
     align-items: center;
     width: 80%;
     top: 0;
     padding-top: 1em;
+}
+
+a {
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3882f6;
 }
 
 .left_nav {
